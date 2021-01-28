@@ -152,7 +152,7 @@ router.post('/forgot', (req, res, next)=> {
 
             let mailOptions = {
                 to: user.email,
-                from : 'Ghulam Abbas myapkforest@gmail.com',
+                from : 'Jessica Leverett Jessak1202@gmail.com',
                 subject : 'Recovery Email from Auth Project',
                 text : 'Please click the following link to recover your passoword: \n\n'+
                         'http://'+ req.headers.host +'/reset/'+token+'\n\n'+

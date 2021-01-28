@@ -18,10 +18,12 @@ const userRoutes = require('./routes/users');
 
 dotenv.config({path : './config.env'});
 
-mongoose.connect(process.env.DATABASE_LOCAL, {
+mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
+}).then(con => {
+    console.log('Database connect succesfully to MONGOOSE!');
 });
 
 // Middleware for session 
